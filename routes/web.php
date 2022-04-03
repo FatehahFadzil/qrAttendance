@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function(){
+    return view('pages.index');
+});
+
+
+
 Route::get('/student', function () {
     return view('student.studentlogin');
 })-> name('studlogin');
